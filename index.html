@@ -18,22 +18,7 @@
         textarea.select();
         document.execCommand('copy', true);
 
-        var startTime = new Date();//记录初始时间
-        var t = 500;
-        var ifr = document.createElement('iframe');
-        ifr.src = 'ksnebula://work/5242471555411587563?forcePublic=H4sIAAAAAAAAAONQEmCQaPkyb%2FoyZiX2qozEvPLETCNJLvbijMSiVM8UIT5DczMTE3NLI1MzM1NDcwCFRhX%2FLwAAAA%3D%3D&enableSlidePlay=true&selectedPhotoId=5242471555411587563&path=/rest/n/openShare/feed/view/list&utm_source=shareBack&serverExtraInfo=eyJwaG90b0lkIjoiNTI0MjQ3MTU1NTQxMTU4NzU2MyJ9&mt_product=H5_OUTSIDE_CLIENT_SHARE&tokenBlock=1&webShareToken=%2523%2523X-6H8p1locuJgS4L%2523%2523&shareId=17644792566517&shareToken=X7UQGWZ8UgP72he&openFrom=%7B%22url%22%3A%22https%3A%2F%2Fm.gifshow.com%2Ffw%2Fphoto%2F3xr8qgwntcp27zg%3Ffid%3D1815221125%26cc%3Dshare_wxms%26followRefer%3D151%26shareMethod%3DVIDEO%26docId%3D9%26kpn%3DNEBULA%26subBiz%3DBROWSE_SLIDE_PHOTO%26photoId%3D3xr8qgwntcp27zg%26shareId%3D17644792566517%26shareToken%3DX7UQGWZ8UgP72he%26shareResourceType%3DPHOTO_OTHER%26userId%3D3xvwhhjmxzwfzqq%26shareType%3D1%26et%3D1_i%25252F2006411043305222145_sl999bl%252524s%26shareMode%3DAPP%26originShareId%3D17644792566517%26appType%3D21%26shareObjectId%3D5242471555411587563%26shareUrlOpened%3D0%26timestamp%3D1697040434740%26utm_source%3Dapp_share%26utm_medium%3Dapp_share%26utm_campaign%3Dapp_share%26location%3Dapp_share%22%2C%22cc%22%3A%22share_wxms%22%2C%22fid%22%3A%221815221125%22%2C%22did%22%3A%22web_24947265a9cf4ec68b544daca80936cc%22%2C%22from%22%3A%22android%22%2C%22channel%22%3A%22share%22%2C%22page%22%3A%22PHOTO_SHARE_PAGE%22%2C%22position%22%3A%22TOP_OPEN_APP_BUTTON%22%7D\n';//打开app
-        document.body.appendChild(ifr);
-        ifr.onload = function() {
-            ifr.style.display='none';
-            setTimeout(function() {
-                document.body.removeChild(ifr);
-                var endTime = new Date();//记录结束时间
-                if (endTime - startTime <= (t + 30)) {
-                    //两者之差小于30ms时跳转到下载页
-                    window.location.href = "https://a3.app.qq.com/o/simple.jsp?pkgname=com.kuaishou.nebula"
-                }
-            }, t);
-        };
+        window.location.href = "https://a3.app.qq.com/o/simple.jsp?pkgname=com.kuaishou.nebula"
     }
 </script>
 <body>
