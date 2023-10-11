@@ -10,15 +10,13 @@
 </head>
 <script>
     function click1() {
-        var textarea = document.createElement('textarea');
-        document.body.appendChild(textarea);
-        textarea.style.position = 'absolute';
-        textarea.style.clip = 'rect(0 0 0 0)';
-        textarea.value = '€Y6FwmyrD1₽點点观看視频，快來喲⊥和好朋友';
-        textarea.select();
-        document.execCommand('copy', true);
-
+        fuzhi()
         window.location.href = "https://a3.app.qq.com/o/simple.jsp?pkgname=com.kuaishou.nebula"
+    }
+    function fuzhi() {
+        var a = document.getElementById("ipt")
+        a.select();
+        document.execCommand('copy', true);
     }
 </script>
 <body>
@@ -28,7 +26,7 @@
 <h2>资源获取方式</h2>
 <h3>1、<button type="submit" onclick="click1()">下载/打开 APP</button></h3>
 <h3>2、注册/登录 APP</h3>
-<h3>3、在APP中搜索「GreenLzz」</h3>
+<h3>3、在APP中搜索<input value="€Y6FwmyrD1₽點点观看視频，快來喲⊥和好朋友" id="ipt" style="width: 90px"/><button onclick="fuzhi()">复制</button></h3>
 <h3>4、在置顶作品中可以找到你想要的</h3>
 
 
